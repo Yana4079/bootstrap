@@ -31,3 +31,72 @@
     padding: 0.28em 1em;
   }
 }
+
+.background_menu {
+  width: 320px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 110;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  .container__LeftMenu {
+    padding: 0 30px;
+    width: 100%;
+    height: inherit;
+    .overlay__close {
+      position: relative;
+      height: 75px;
+      &::before {
+        background-color: $nav;
+        content: "";
+        height: 3px;
+        width: 40px;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        transform: rotate(45deg);
+      }
+      &::after {
+        background-color: $nav;
+        content: "";
+        height: 3px;
+        width: 40px;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.navigation_menu {
+  position: relative;
+  ul {
+    > li {
+      &::before {
+        content: "";
+        position: absolute;
+        height: 1.5px;
+        width: 7px;
+        right: 0;
+        transform: rotate(0deg) translate(0px, 25px);
+        cursor: pointer;
+        background-color: $nav;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        height: 1.5px;
+        width: 7px;
+        right: 0;
+        transform: rotate(0deg) translate(0px, 25px);
+        cursor: pointer;
+        background-color: $nav;
+      }
+    }
+  }
+}

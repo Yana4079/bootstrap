@@ -1,3 +1,6 @@
+.container-fluid {
+  position: fixed !important;
+}
 .navbar_logo {
   max-width: 232px;
   margin-top: 20px;
@@ -50,7 +53,7 @@
 
 .navbar-nav {
   display: flex !important;
-  width: 100% !important;
+  width: 70% !important;
   justify-content: space-between !important;
 }
 
@@ -95,5 +98,16 @@
     width: 4px;
     border-radius: 3px;
     background-color: $nav;
+  }
+}
+
+.search_panel_nav {
+  > svg {
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    position: absolute;
+    right: 0;
+    margin-top: -15px;
   }
 }

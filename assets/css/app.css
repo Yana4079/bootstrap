@@ -11259,6 +11259,10 @@ button span {
   }
 }
 
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+  position: fixed !important;
+}
+
 .navbar_logo {
   max-width: 232px;
   margin-top: 20px;
@@ -11315,7 +11319,7 @@ button span {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-  width: 100% !important;
+  width: 70% !important;
   -webkit-box-pack: justify !important;
       -ms-flex-pack: justify !important;
           justify-content: space-between !important;
@@ -11369,6 +11373,15 @@ button span {
   background-color: #4A4A4A;
 }
 
+.search_panel_nav > svg {
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  position: absolute;
+  right: 0;
+  margin-top: -15px;
+}
+
 .form {
   position: relative;
 }
@@ -11400,6 +11413,81 @@ button span {
   right: 0;
   top: 1px;
   padding: 0.28em 1em;
+}
+
+.background_menu {
+  width: 320px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 110;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.background_menu .container__LeftMenu {
+  padding: 0 30px;
+  width: 100%;
+  height: inherit;
+}
+
+.background_menu .container__LeftMenu .overlay__close {
+  position: relative;
+  height: 75px;
+}
+
+.background_menu .container__LeftMenu .overlay__close::before {
+  background-color: #4A4A4A;
+  content: "";
+  height: 3px;
+  width: 40px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.background_menu .container__LeftMenu .overlay__close::after {
+  background-color: #4A4A4A;
+  content: "";
+  height: 3px;
+  width: 40px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(-45deg);
+}
+
+.navigation_menu {
+  position: relative;
+}
+
+.navigation_menu ul > li::before {
+  content: "";
+  position: absolute;
+  height: 1.5px;
+  width: 7px;
+  right: 0;
+  -webkit-transform: rotate(0deg) translate(0px, 25px);
+          transform: rotate(0deg) translate(0px, 25px);
+  cursor: pointer;
+  background-color: #4A4A4A;
+}
+
+.navigation_menu ul > li::after {
+  content: "";
+  position: absolute;
+  height: 1.5px;
+  width: 7px;
+  right: 0;
+  -webkit-transform: rotate(0deg) translate(0px, 25px);
+          transform: rotate(0deg) translate(0px, 25px);
+  cursor: pointer;
+  background-color: #4A4A4A;
 }
 
 .btn {
