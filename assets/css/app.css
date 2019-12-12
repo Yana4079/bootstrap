@@ -11427,6 +11427,12 @@ button span {
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 992px) {
+  .background_menu {
+    width: 100%;
+  }
+}
+
 .background_menu .container__LeftMenu {
   padding: 0 30px;
   width: 100%;
@@ -11466,28 +11472,55 @@ button span {
   position: relative;
 }
 
-.navigation_menu ul > li::before {
-  content: "";
-  position: absolute;
-  height: 1.5px;
-  width: 7px;
-  right: 0;
-  -webkit-transform: rotate(0deg) translate(0px, 25px);
-          transform: rotate(0deg) translate(0px, 25px);
-  cursor: pointer;
-  background-color: #4A4A4A;
+.navigation_menu ul {
+  line-height: 40px !important;
 }
 
-.navigation_menu ul > li::after {
-  content: "";
-  position: absolute;
-  height: 1.5px;
-  width: 7px;
-  right: 0;
-  -webkit-transform: rotate(0deg) translate(0px, 25px);
-          transform: rotate(0deg) translate(0px, 25px);
+.navigation_menu ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px !important;
+  line-height: 40px !important;
+}
+
+.overlay_social {
+  border-top: 3px solid #f3f3f3;
+  border-bottom: 3px solid #f3f3f3;
+  margin: 35px 0;
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+
+.overlay_title {
+  color: #d1d1d1 !important;
+  margin-bottom: 20px !important;
+  font-size: 16px !important;
+}
+
+.overlay__button {
+  text-align: center;
+}
+
+.overlay__button button {
+  background: #000000;
+  color: #ffffff;
+  width: 170px;
+  border-radius: 1px;
   cursor: pointer;
-  background-color: #4A4A4A;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  z-index: 1;
+  margin: 20px auto;
 }
 
 .btn {

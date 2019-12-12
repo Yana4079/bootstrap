@@ -9,42 +9,91 @@
   <link rel="icon" href="favicon.ico">
 
   <title>Bootstrap Stater</title>
-
+<script src="assets/js/main.js"></script>
   <!-- Icons for this template -->
   <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Stylesheet -->
   <!-- build:css -->
   <link href="assets/css/app.css" rel="stylesheet">
   <!-- endbuild -->
+  <script src="https://kit.fontawesome.com/ce52388740.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="background_menu">
+  <div class="background_menu" id="close">
     <div class="container__LeftMenu">
-      <div class="overlay__close">
+      <div class="overlay__close" onclick="HideLeftMenu()">
       </div>
       <div class="navigation_menu">
         <ul>
-          <li>Panorama d’Italia</li>
-          <li>News</li>
-          <li>Economia</li>
-          <li>Mytech</li>
-          <li>Cinema</li>
-          <li>Musica</li>
-          <li>Tv</li>
-          <li>Cultura</li>
-          <li>Sport</li>
-          <li>Società</li>
-          <li>Foto</li>
-          <li>Magazine</li>
+          <li>Panorama d’Italia
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </li>
+          <li>News
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </li>
+          <li>Economia
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </li>
+          <li>Mytech
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </li>
+          <li>Cinema
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </li>
+          <li>Musica
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </li>
+          <li>Tv
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </li>
+          <li>Cultura
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </li>
+          <li>Sport
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </li>
+          <li>Società
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </li>
+          <li>Foto
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </li>
+          <li>
+            Magazine
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </li>
+          <li>
+            Panorama Tv
+          </li>
+        </ul>
+        <ul>
+          <li>This is Italy</li>
           <li>Panorama Tv</li>
         </ul>
+      </div>
+      <div class="overlay_social">
+        <div class="overlay_title">SEGUICI</div>
+        <div class="overlay_social-button">
+          <div class="fa_facebook">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </div>
+          <div class="twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+          <div class="fa_google">
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="overlay__button">
+        <button>ABBONATI</button>
       </div>
     </div>
   </div>
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#" id="navbarToggleExternalContent" data-target="#navbarToggleExternalContent">
+      <a class="navbar-brand" href="#" id="navbarToggleExternalContent" data-target="#navbarToggleExternalContent" onclick="OpenLeftMenu()">
         <span class="navbar-brand__menu"></span>
       </a>
 
